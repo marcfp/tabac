@@ -1,0 +1,25 @@
+{
+  "name": "tabac",
+  "description": "Quan fa que he deixat el tabac?",
+  "icons": {
+    "512": "/img/i_want_128.png",
+    "128": "/img/i_want_512.png"
+  },
+  "version": "0.2",
+  "type": "web",
+  "launch_path": "/index.html",
+  "permissions": {},
+  "orientation": "portrait-primary",
+  "developer": {
+    "name": "Marc Furtià i Puig",
+    "url": "",
+    "email": "marcfurtia@riseup.net"
+  },
+  "default_locale": "ca-ES",
+  "locales": {
+    "ca-ES": {
+      "name": "Tabac",
+      "description": "Quan fa que he deixat el tabac?"
+    }
+  }
+}
