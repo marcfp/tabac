@@ -20,7 +20,7 @@ function decimalAdjust(type, value, exp) {
 function calcula(cigarretes,preu,datainici,recaigudes)
 {
 //alert("data en què és va deixar = " + datainici.value);
-//alert(" preu ="+preu.value);
+alert(" preu ="+preu.value);
 var preu_cigarreta=parseFloat(preu.value / 20);
 var cost= preu_cigarreta * cigarretes.value;
 
@@ -88,13 +88,16 @@ else{
     minuts = decimalAdjust('round', minuts, -1);
     hores = decimalAdjust('round', hores, -1);
     dies_totals = decimalAdjust('round', dies_totals, -1);
-
-    alert(" DADES BONES -> "+dies_totals+" DIES "+ hores+" hores " + minuts +" minuts "+ segons +" segons "+ elapsed/1000+" milisegons que ho vas deixar :P");
-    var total = parseFloat(parseInt(cigarretes.value) * preu_cigarreta) * dies_totals;
+    var preu_cigarreta = parseInt(cigarretes.value) * (preu.value / 20);
+    alert(" DADES BONES -> "+dies_totals+" DIES "+ hores+" hores " + minuts +" minuts "+ segons +" segons "+ elapsed/1000+" milisegons que ho vas deixar :P ");
+    var total = cost*dies_totals;//parseFloat(parseInt(cigarretes.value) * preu_cigarreta) / dies_totals;
     total=decimalAdjust('round', total, -2);
     if(!isNaN(total)){
 	alert("CONTINUANT FUMANT, hauries gastat en tabac " +total+ " €uros en aquests " + dies_totals + " dies ... Val la pena NO FUMAR!!?");
     }
+    else{
+	alert("raoooo");
+	}
 
 }
 }
