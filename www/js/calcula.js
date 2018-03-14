@@ -20,7 +20,7 @@ function decimalAdjust(type, value, exp) {
 function calcula(cigarretes,preu,datainici,recaigudes)
 {
 //alert("data en què és va deixar = " + datainici.value);
-alert(" preu ="+preu.value);
+//alert(" preu ="+preu.value);
 var preu_cigarreta=parseFloat(preu.value / 20);
 var cost= preu_cigarreta * cigarretes.value;
 
